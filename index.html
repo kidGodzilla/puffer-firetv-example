@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://puffer.stanford.edu/static/puffer/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://puffer.stanford.edu/static/puffer/css/common.css">
+  <link rel="stylesheet" href="https://puffer.stanford.edu/static/puffer/css/player.css">
+  <title>Puffer</title>
+  <link rel="icon" href="https://puffer.stanford.edu/static/puffer/dist/images/favicon.ico">
+  <style type="text/css">
+    body {
+      background: #000;
+    }
+    nav {
+      display: none !important;
+    }
+    button[data-target="#debug-info"] {
+      opacity: 0;
+    }
+    #channel-list {
+      opacity: 0;
+    }
+    .embed-responsive {
+      overflow: initial;
+    }
+    #tv-video {
+      width: 100vw;
+      height: 100vh;
+    }
+    #tv-controls {
+      opacity: 0 !important;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  
+  <!-- Player -->
+  <div class="">
+    <!-- Success or error messages -->
+
+    <div class="row">
+      <div class="col-md-9 mt-3">
+        <ul class="list-unstyled" id="player-error-list"></ul>
+
+        <div class="embed-responsive embed-responsive-16by9">
+          <div id="tv-container">
+            <video id="tv-video" muted></video>
+            <div id="tv-spinner"></div>
+            <div id="tv-play-button"><div id="tv-play-button-inner"></div></div>
+            <div id="tv-controls">
+              <button type="button" id="mute-button"></button>
+              <input type="range" id="volume-bar" min="0" max="1" step="0.05" value="0">
+              <button type="button" id="full-screen-button"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 mt-3">
+        <div class="list-group" id="channel-list">
+          <button type="button" name="cbs" class="list-group-item list-group-item-action">
+            KPIX 5 (CBS)
+          </button>
+          <button type="button" name="nbc" class="list-group-item list-group-item-action">
+            KNTV 11 (NBC)
+          </button>
+          <button type="button" name="abc" class="list-group-item list-group-item-action">
+            KGO-TV 7 (ABC)
+          </button>
+          <button type="button" name="fox" class="list-group-item list-group-item-action">
+            KTVU 2 (Fox)
+          </button>
+          <button type="button" name="univision" class="list-group-item list-group-item-action">
+            KDTV 14 (Univision)
+          </button>
+          <button type="button" name="pbs" class="list-group-item list-group-item-action">
+            KQED 9 (PBS)
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-md-9">
+        <div class="alert alert-info" role="alert" id="unmute-message">
+          Video is muted by default; <u id="unmute-here">unmute here</u></span>
+          or use the player control bar.
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <div>
+      <button class="btn btn-info" type="button" data-toggle="collapse"
+              data-target="#debug-info" aria-expanded="false" aria-controls="debug-info">
+        Show debug info
+      </button>
+      <div class="collapse py-2" id="debug-info">
+        Video playback buffer (s): <span id="video-buf">N/A</span><br>
+        Video resolution: <span id="video-res">N/A</span><br>
+        Video encoding setting (CRF): <span id="video-crf">N/A</span><br>
+        Video quality (SSIM dB): <span id="video-ssim">N/A</span><br>
+        Video bitrate (kbps): <span id="video-bitrate">N/A</span>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://puffer.stanford.edu/static/puffer/dist/js/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://puffer.stanford.edu/static/puffer/dist/js/bootstrap.min.js"></script>
+
+  <script src="player.js"></script>
+  
+  <script type="text/javascript">
+    // Insert your init_player code here
+  </script>
+
+  <script type="text/javascript">
+    setTimeout(function () { document.querySelector('#unmute-here').click() }, 500);
+  </script>
+ 
+</body>
+</html>

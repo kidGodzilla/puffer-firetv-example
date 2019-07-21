@@ -1,0 +1,33 @@
+{
+  "name": "puffer-firetv",
+  "version": "1.0.0",
+  "description": "Stanford Puffer Live TV Streaming App for Fire TV (Example / How-to)",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "serve -p 1111"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kidGodzilla/puffer-firetv-example.git"
+  },
+  "keywords": [
+    "fire",
+    "tv",
+    "fire",
+    "os",
+    "tutorial",
+    "live",
+    "tv",
+    "streaming"
+  ],
+  "author": "James Futhey <futhey@gmail.com> (http://jamesfuthey.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kidGodzilla/puffer-firetv-example/issues"
+  },
+  "homepage": "https://github.com/kidGodzilla/puffer-firetv-example#readme",
+  "dependencies": {
+    "serve": "^11.1.0"
+  }
+}
