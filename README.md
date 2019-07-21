@@ -1,7 +1,11 @@
 # puffer-firetv-example
 Stanford Puffer Live TV Streaming App for Fire TV (Example / How-to)
 
-## gh-pages branch
+## Full Guide / Tutorial
+
+https://medium.com/p/if-youve-never-considered-building-a-fire-tv-app-before-do-it-it-s-stupid-how-easy-it-is-c19fd3f675af
+
+## Editing the gh-pages branch (not this one)
 
 **THIS IS NOT THE GH-PAGES BRANCH! EDIT THE [GH-PAGES BRANCH](../../tree/gh-pages) INSTEAD OF THIS ONE!**
 
