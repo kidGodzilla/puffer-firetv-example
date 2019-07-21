@@ -3,7 +3,7 @@ Stanford Puffer Live TV Streaming App for Fire TV (Example / How-to)
 
 ## gh-pages branch
 
-**THIS IS NOT THE GH-PAGES BRANCH! EDIT THE GH-PAGES BRANCH INSTEAD OF THIS ONE!**
+**THIS IS NOT THE GH-PAGES BRANCH! EDIT THE [GH-PAGES BRANCH](/tree/gh-pages) INSTEAD OF THIS ONE!**
 
 If you're forking this repository, you'll want to edit the `gh-pages` branch and replace the session details at the bottom of `index.html` with your own.
 
